@@ -1,0 +1,92 @@
+=== Gestor de Tareas Pendientes ===
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: abc
+Por favor ingresa un número válido.
+Opción inválida. Por favor elige entre 1 y 5.
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 9
+Opción inválida. Por favor elige entre 1 y 5.
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 2
+Describe la nueva tarea: ¡Tarea agregada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 3
+┌─┬──────┬────────────────┐
+│#│Estado│Descripción     │
+├─┼──────┼────────────────┤
+│1│[ ]   │Comprar leche   │
+│2│[X]   │Hacer ejercicio │
+│3│[ ]   │Llamar al médico│
+│4│[ ]   │Tarea de prueba │
+└─┴──────┴────────────────┘
+Número de la tarea a marcar como completada: 0
+Posición inválida. Por favor ingresa un número de la lista.
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 3
+┌─┬──────┬────────────────┐
+│#│Estado│Descripción     │
+├─┼──────┼────────────────┤
+│1│[ ]   │Comprar leche   │
+│2│[X]   │Hacer ejercicio │
+│3│[ ]   │Llamar al médico│
+│4│[ ]   │Tarea de prueba │
+└─┴──────┴────────────────┘
+Número de la tarea a marcar como completada: 99
+Posición inválida. Por favor ingresa un número de la lista.
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 3
+┌─┬──────┬────────────────┐
+│#│Estado│Descripción     │
+├─┼──────┼────────────────┤
+│1│[ ]   │Comprar leche   │
+│2│[X]   │Hacer ejercicio │
+│3│[ ]   │Llamar al médico│
+│4│[ ]   │Tarea de prueba │
+└─┴──────┴────────────────┘
+Número de la tarea a marcar como completada: 1
+¡Tarea 'Comprar leche' marcada como completada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 5
+¡Hasta luego!
