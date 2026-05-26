@@ -4,6 +4,7 @@ import de.vandermeer.asciitable.AsciiTable;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Gestor de tareas: contiene toda la lógica de negocio y el menú principal.
@@ -148,5 +149,86 @@ public class TaskManager {
      */
     public static int countPending(List<Task> tasks) {
         return countPending(tasks, 0);
+    }
+
+    // ===================================================================
+    // MENÚ PRINCIPAL
+    // ===================================================================
+
+    /**
+     * Punto de entrada de la aplicación. Muestra el menú en bucle mientras
+     * el usuario no elija salir.
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
+    public static void main(String[] args) {
+        List<Task> tasks = getTasks();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== Gestor de Tareas Pendientes ===");
+
+        // Bucle principal: se repite hasta que el usuario elige "Salir"
+        boolean running = true;
+        while (running) {
+            printMenu();
+            System.out.print("Elige una opción: ");
+
+            int option = readInt(scanner);
+
+            switch (option) {
+                case 1 -> displayTasks(tasks);
+                case 2 -> {
+                    System.out.print("Describe la nueva tarea: ");
+                    String description = scanner.nextLine().trim();
+                    tasks = addTask(tasks, description);
+                }
+                case 3 -> {
+                    displayTasks(tasks);
+                    System.out.print("Número de la tarea a marcar como completada: ");
+                    int position = readInt(scanner);
+                    markCompleted(tasks, position);
+                }
+                case 4 -> System.out.println("Total de tareas pendientes: " + countPending(tasks));
+                case 5 -> {
+                    System.out.println("¡Hasta luego!");
+                    running = false;
+                }
+                default -> System.out.println("Opción inválida. Por favor elige entre 1 y 5.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    /**
+     * Imprime el menú de opciones en pantalla.
+     */
+    private static void printMenu() {
+        System.out.println("\n--- Gestor de Tareas Pendientes ---");
+        System.out.println("1. Ver todas las tareas");
+        System.out.println("2. Agregar nueva tarea");
+        System.out.println("3. Marcar tarea como completada");
+        System.out.println("4. Mostrar total de tareas pendientes");
+        System.out.println("5. Salir");
+    }
+
+    /**
+     * Lee un número entero del Scanner de forma segura.
+     *
+     * <p>Si el usuario ingresa texto no numérico, captura la excepción,
+     * avisa al usuario y retorna -1 para que el switch muestre "opción inválida".</p>
+     *
+     * @param scanner fuente de entrada
+     * @return entero leído, o -1 si la entrada no es numérica
+     */
+    private static int readInt(Scanner scanner) {
+        try {
+            String line = scanner.nextLine().trim();
+            return Integer.parseInt(line);
+        } catch (NumberFormatException e) {
+            // Entrada no numérica: se informa al usuario sin romper el flujo
+            System.out.println("Por favor ingresa un número válido.");
+            return -1;
+        }
     }
 }
