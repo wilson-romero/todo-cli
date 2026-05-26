@@ -64,4 +64,25 @@ public class TaskManager {
         table.addRule();
         System.out.println(table.render());
     }
+
+    // ===================================================================
+    // AGREGAR TAREA
+    // ===================================================================
+
+    /**
+     * Crea una nueva tarea y la añade al final de la lista.
+     *
+     * <p>Método con parámetros y con retorno — demuestra función que
+     * modifica y devuelve la colección.</p>
+     *
+     * @param tasks       lista actual de tareas
+     * @param description texto descriptivo de la nueva tarea
+     * @return lista con la nueva tarea incluida
+     */
+    public static List<Task> addTask(List<Task> tasks, String description) {
+        // La nueva tarea siempre inicia como pendiente (completed = false)
+        tasks.add(new Task(description, false));
+        System.out.println("¡Tarea agregada!");
+        return tasks;
+    }
 }
