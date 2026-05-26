@@ -1,6 +1,7 @@
 package com.ucompensar.todo;
 
 import de.vandermeer.asciitable.AsciiTable;
+import de.vandermeer.asciitable.CWC_LongestLine;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,6 +64,8 @@ public class TaskManager {
         }
 
         table.addRule();
+        // Ajusta el ancho de cada columna al contenido más largo
+        table.getRenderer().setCWC(new CWC_LongestLine());
         System.out.println(table.render());
     }
 
@@ -224,6 +227,8 @@ public class TaskManager {
     private static int readInt(Scanner scanner) {
         try {
             String line = scanner.nextLine().trim();
+            // Eco del input para que aparezca en archivos de evidencia
+            System.out.println(line);
             return Integer.parseInt(line);
         } catch (NumberFormatException e) {
             // Entrada no numérica: se informa al usuario sin romper el flujo
