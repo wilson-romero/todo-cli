@@ -85,4 +85,31 @@ public class TaskManager {
         System.out.println("¡Tarea agregada!");
         return tasks;
     }
+
+    // ===================================================================
+    // MARCAR COMO COMPLETADA
+    // ===================================================================
+
+    /**
+     * Marca como completada la tarea en la posición indicada por el usuario.
+     *
+     * <p>Método con parámetros sin retorno — procedimiento que modifica
+     * la lista original. La posición recibida es 1-based (como la ve el
+     * usuario en pantalla); internamente se convierte a 0-based.</p>
+     *
+     * @param tasks    lista de tareas
+     * @param position número de tarea mostrado al usuario (empieza en 1)
+     */
+    public static void markCompleted(List<Task> tasks, int position) {
+        try {
+            // Convierte posición visible (1-based) a índice interno (0-based)
+            int index = position - 1;
+            Task task = tasks.get(index);
+            task.setCompleted(true);
+            System.out.println("¡Tarea '" + task.getDescription() + "' marcada como completada!");
+        } catch (IndexOutOfBoundsException e) {
+            // Informa al usuario sin romper el programa
+            System.out.println("Posición inválida. Por favor ingresa un número de la lista.");
+        }
+    }
 }
