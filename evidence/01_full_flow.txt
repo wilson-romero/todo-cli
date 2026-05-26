@@ -1,0 +1,133 @@
+=== Gestor de Tareas Pendientes ===
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 1
+┌─┬──────┬────────────────┐
+│#│Estado│Descripción     │
+├─┼──────┼────────────────┤
+│1│[ ]   │Comprar leche   │
+│2│[X]   │Hacer ejercicio │
+│3│[ ]   │Llamar al médico│
+└─┴──────┴────────────────┘
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 4
+Total de tareas pendientes: 2
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 2
+Describe la nueva tarea: ¡Tarea agregada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 2
+Describe la nueva tarea: ¡Tarea agregada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 1
+┌─┬──────┬────────────────────────┐
+│#│Estado│Descripción             │
+├─┼──────┼────────────────────────┤
+│1│[ ]   │Comprar leche           │
+│2│[X]   │Hacer ejercicio         │
+│3│[ ]   │Llamar al médico        │
+│4│[ ]   │Estudiar para el parcial│
+│5│[ ]   │Lavar la ropa           │
+└─┴──────┴────────────────────────┘
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 3
+┌─┬──────┬────────────────────────┐
+│#│Estado│Descripción             │
+├─┼──────┼────────────────────────┤
+│1│[ ]   │Comprar leche           │
+│2│[X]   │Hacer ejercicio         │
+│3│[ ]   │Llamar al médico        │
+│4│[ ]   │Estudiar para el parcial│
+│5│[ ]   │Lavar la ropa           │
+└─┴──────┴────────────────────────┘
+Número de la tarea a marcar como completada: 1
+¡Tarea 'Comprar leche' marcada como completada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 3
+┌─┬──────┬────────────────────────┐
+│#│Estado│Descripción             │
+├─┼──────┼────────────────────────┤
+│1│[X]   │Comprar leche           │
+│2│[X]   │Hacer ejercicio         │
+│3│[ ]   │Llamar al médico        │
+│4│[ ]   │Estudiar para el parcial│
+│5│[ ]   │Lavar la ropa           │
+└─┴──────┴────────────────────────┘
+Número de la tarea a marcar como completada: 4
+¡Tarea 'Estudiar para el parcial' marcada como completada!
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 1
+┌─┬──────┬────────────────────────┐
+│#│Estado│Descripción             │
+├─┼──────┼────────────────────────┤
+│1│[X]   │Comprar leche           │
+│2│[X]   │Hacer ejercicio         │
+│3│[ ]   │Llamar al médico        │
+│4│[X]   │Estudiar para el parcial│
+│5│[ ]   │Lavar la ropa           │
+└─┴──────┴────────────────────────┘
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 4
+Total de tareas pendientes: 2
+
+--- Gestor de Tareas Pendientes ---
+1. Ver todas las tareas
+2. Agregar nueva tarea
+3. Marcar tarea como completada
+4. Mostrar total de tareas pendientes
+5. Salir
+Elige una opción: 5
+¡Hasta luego!
