@@ -112,4 +112,41 @@ public class TaskManager {
             System.out.println("Posición inválida. Por favor ingresa un número de la lista.");
         }
     }
+
+    // ===================================================================
+    // CONTEO RECURSIVO DE TAREAS PENDIENTES
+    // ===================================================================
+
+    /**
+     * Cuenta recursivamente cuántas tareas pendientes hay en la lista.
+     *
+     * <p>Método con parámetros y con retorno — solución recursiva sin
+     * bucles ni streams.</p>
+     *
+     * @param tasks lista de tareas
+     * @param index índice actual (llamada interna)
+     * @return número de tareas no completadas desde {@code index} hasta el final
+     */
+    public static int countPending(List<Task> tasks, int index) {
+        // Caso base: se recorrió toda la lista, no hay más pendientes
+        if (index == tasks.size()) return 0;
+
+        // Caso recursivo: si la tarea actual está pendiente, suma 1 y avanza
+        if (!tasks.get(index).isCompleted()) {
+            return 1 + countPending(tasks, index + 1);
+        }
+
+        // Caso recursivo: la tarea está completada, no suma, solo avanza
+        return countPending(tasks, index + 1);
+    }
+
+    /**
+     * Sobrecarga de conveniencia: arranca el conteo desde el primer elemento.
+     *
+     * @param tasks lista de tareas
+     * @return número total de tareas pendientes
+     */
+    public static int countPending(List<Task> tasks) {
+        return countPending(tasks, 0);
+    }
 }
